@@ -43,4 +43,4 @@ helm uninstall sonar-release -n sonar
 
 Here is an Diagramm of the cloud architecture:
 
-![Architecture](https://github.com/lucdoe/clubwind-helmcharts/blob/main/Cloud-Diagramm.png?raw=true)
+![Architecture](https://github.com/lucdoe/clubwind-helmcharts/blob/main/Cloud-Diagram.png?raw=true)
