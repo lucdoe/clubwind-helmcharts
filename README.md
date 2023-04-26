@@ -44,3 +44,5 @@ helm uninstall sonar-release -n sonar
 Here is an Diagramm of the cloud architecture:
 
 ![Architecture](https://github.com/lucdoe/clubwind-helmcharts/blob/main/Cloud-Diagram.png?raw=true)
+
+Users would land on the NGINX outward facing Ingress and are then routed inside to the respective service depending on the URL and or endpoint. The User on the left demonstrates a developer using and interacting with the Cluster through kubectl, a command-line tool used to interact with Kubernetes clusters, allowing users to deploy, manage, and monitor applications running on a Kubernetes cluster.
