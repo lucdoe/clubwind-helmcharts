@@ -1,0 +1,22 @@
+ingress:
+  enabled: true
+  className: ""
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+    kubernetes.io/tls-acme: "true"
+  hosts:
+    - host: sonarqube.lucdoe.de
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - hosts:
+        - sonarqube.lucdoe.de
+      secretName: sonarqube-tls
+
+certManager:
+  enabled: true
+  email: doerrstein.lucca@yahoo.de
+  server: https://acme-v02.api.letsencrypt.org/directory
+  privateKeySecretRefName: letsencrypt-prod-private-key
