@@ -25,19 +25,22 @@ Overall, the Lucdoe.de application is deployed using multiple Helm charts, each 
 3. Set current project: `gcloud config set project express-kubernetes-384308`
 
 ## Installing the charts
-
+```bash
 helm install express-release . -n express --create-namespace
 helm install sonar-release . -n sonar --create-namespace
+```
 
 ## Updating the charts
-
+```bash
 helm upgrade express-release . -n express --create-namespace
 helm upgrade sonar-release . -n sonar --create-namespace
+```
 
 ## Uninstalling the charts
-
+```bash
 helm uninstall express-release -n express
 helm uninstall sonar-release -n sonar
+```
 
 ## Architecture
 
